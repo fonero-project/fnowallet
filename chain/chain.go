@@ -20,7 +20,7 @@ import (
 
 var requiredChainServerAPI = semver{major: 5, minor: 0, patch: 0}
 
-// RPCClient represents a persistent client connection to a fnocoin RPC server
+// RPCClient represents a persistent client connection to a fonero RPC server
 // for information regarding the current best block chain.
 type RPCClient struct {
 	*fnorpcclient.Client
@@ -42,7 +42,7 @@ type RPCClient struct {
 // connect string.  If disableTLS is false, the remote RPC certificate must be
 // provided in the certs slice.  The connection is not established immediately,
 // but must be done using the Start method.  If the remote server does not
-// operate on the same fnocoin network as described by the passed chain
+// operate on the same fonero network as described by the passed chain
 // parameters, the connection will be disconnected.
 // Deprecated: use NewRPCClientConfig
 func NewRPCClient(chainParams *chaincfg.Params, connect, user, pass string, certs []byte,
@@ -224,7 +224,7 @@ type (
 )
 
 // notifications returns a channel of parsed notifications sent by the remote
-// fnocoin RPC server.  This channel must be continually read or the process
+// fonero RPC server.  This channel must be continually read or the process
 // may abort for running out memory, as unread notifications are queued for
 // later reads.
 func (c *RPCClient) notifications() <-chan interface{} {

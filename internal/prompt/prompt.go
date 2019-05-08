@@ -353,7 +353,7 @@ func Seed(reader *bufio.Reader) (seed []byte, imported bool, err error) {
 // option of using this passphrase if public data encryption is enabled,
 // otherwise a user-specified passphrase will be prompted for.
 func Setup(r *bufio.Reader, insecurePubPass, configPubPass []byte) (privPass, pubPass, seed []byte, imported bool, err error) {
-	// Fonero: no legacy keystore restore is needed (first fnocoin wallet
+	// Fonero: no legacy keystore restore is needed (first fonero wallet
 	// version did not use the legacy keystore from earlier versions of
 	// btcwallet).
 

@@ -29,9 +29,9 @@ if [[ ! "$DOCKER" ]]; then
     exit
 fi
 
-DOCKER_IMAGE_TAG=fnocoin-golang-builder-$GOVERSION
-$DOCKER pull fnocoin/$DOCKER_IMAGE_TAG
-$DOCKER run --rm -it -v $(pwd):/src:Z fnocoin/$DOCKER_IMAGE_TAG /bin/bash -c "\
+DOCKER_IMAGE_TAG=fonero-golang-builder-$GOVERSION
+$DOCKER pull fonero/$DOCKER_IMAGE_TAG
+$DOCKER run --rm -it -v $(pwd):/src:Z fonero/$DOCKER_IMAGE_TAG /bin/bash -c "\
   cp -R /src ~/src && \
   cd ~/src && \
   env GOVERSION=$GOVERSION bash ./run_tests.sh"

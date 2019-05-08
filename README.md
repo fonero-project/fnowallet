@@ -72,7 +72,7 @@ Wallet clients interact with the wallet using one of two RPC servers:
 
 Binary releases are provided for common operating systems and architectures:
 
-https://github.com/fonero-project/fnocoin-binaries/releases
+https://github.com/fonero-project/fnod-binaries/releases
 
 ### Build from source (all platforms)
 
@@ -108,7 +108,7 @@ root directory.  Some notes:
 All tests and linters may be run in a docker container using the script
 `run_tests.sh`.  This script defaults to using the current supported version of
 go.  You can run it with the major version of go you would like to use as the
-only arguement to test a previous on a previous version of go (generally fnocoin
+only arguement to test a previous on a previous version of go (generally fonero
 supports the current version of go and the previous one).
 
 ```
@@ -151,8 +151,8 @@ RPC username and password.
 
 PowerShell (Installed from source):
 ```
-PS> cp $env:GOPATH\src\github.com\fnocoin\fnod\sample-fnod.conf $env:LOCALAPPDATA\Dcrd\fnod.conf
-PS> cp $env:GOPATH\src\github.com\fnocoin\fnowallet\sample-fnowallet.conf $env:LOCALAPPDATA\Dcrwallet\fnowallet.conf
+PS> cp $env:GOPATH\src\github.com\fonero\fnod\sample-fnod.conf $env:LOCALAPPDATA\Dcrd\fnod.conf
+PS> cp $env:GOPATH\src\github.com\fonero\fnowallet\sample-fnowallet.conf $env:LOCALAPPDATA\Dcrwallet\fnowallet.conf
 PS> $editor $env:LOCALAPPDATA\Dcrd\fnod.conf
 PS> $editor $env:LOCALAPPDATA\Dcrwallet\fnowallet.conf
 ```

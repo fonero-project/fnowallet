@@ -42,8 +42,8 @@ func errContext(err error, context string) error {
 
 // Flags.
 var opts = struct {
-	TestNet               bool    `long:"testnet" description:"Use the test fnocoin network"`
-	SimNet                bool    `long:"simnet" description:"Use the simulation fnocoin network"`
+	TestNet               bool    `long:"testnet" description:"Use the test fonero network"`
+	SimNet                bool    `long:"simnet" description:"Use the simulation fonero network"`
 	RPCConnect            string  `short:"c" long:"connect" description:"Hostname[:port] of wallet RPC server"`
 	RPCUsername           string  `short:"u" long:"rpcuser" description:"Wallet RPC username"`
 	RPCPassword           string  `short:"P" long:"rpcpass" description:"Wallet RPC password"`
@@ -119,7 +119,7 @@ func init() {
 	}
 
 	if opts.TestNet && opts.SimNet {
-		fatalf("Multiple fnocoin networks may not be used simultaneously")
+		fatalf("Multiple fonero networks may not be used simultaneously")
 	}
 	var activeNet = &chaincfg.MainNetParams
 	if opts.TestNet {

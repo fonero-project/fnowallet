@@ -23,7 +23,7 @@ type HardcodedDeployment struct {
 }
 
 // DCP0001 specifies hard forking changes to the stake difficulty algorithm as
-// defined by https://github.com/fnocoin/dcps/blob/master/dcp-0001/dcp-0001.mediawiki.
+// defined by https://github.com/fonero/dcps/blob/master/dcp-0001/dcp-0001.mediawiki.
 var DCP0001 = HardcodedDeployment{
 	MainNetActivationHeight:  0,
 	TestNetActivationHeight:  0,
@@ -31,7 +31,7 @@ var DCP0001 = HardcodedDeployment{
 }
 
 // DCP0002 specifies the activation of the OP_SHA256 hard fork as defined by
-// https://github.com/fnocoin/dcps/blob/master/dcp-0002/dcp-0002.mediawiki.
+// https://github.com/fonero/dcps/blob/master/dcp-0002/dcp-0002.mediawiki.
 var DCP0002 = HardcodedDeployment{
 	MainNetActivationHeight:  0,
 	TestNetActivationHeight:  0,
@@ -39,7 +39,7 @@ var DCP0002 = HardcodedDeployment{
 }
 
 // DCP0003 specifies the activation of a CSV soft fork as defined by
-// https://github.com/fnocoin/dcps/blob/master/dcp-0003/dcp-0003.mediawiki.
+// https://github.com/fonero/dcps/blob/master/dcp-0003/dcp-0003.mediawiki.
 var DCP0003 = HardcodedDeployment{
 	MainNetActivationHeight:  0,
 	TestNetActivationHeight:  0,
