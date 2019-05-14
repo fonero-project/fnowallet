@@ -8,7 +8,7 @@ require (
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jrick/bitset v1.0.0
 	github.com/jrick/logrotate v1.0.0
-	github.com/fonero-project/fnod v0.0.0-20190509074000-c39a00dc7b28
+	github.com/fonero-project/fnod v0.0.0-20190514051128-48e51dacc4c3
 	golang.org/x/crypto v0.0.0-20190222235706-ffb98f73852f
 	golang.org/x/net v0.0.0-20190213061140-3a22650c66bd
 	golang.org/x/sync v0.0.0-20181221193216-37e7f081c4d4
